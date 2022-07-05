@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+E
 
 DEFINE("BDD", "tchat");
 DEFINE("USER", "root");
