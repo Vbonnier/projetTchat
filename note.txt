@@ -13,4 +13,4 @@ question secrète = question
 Formulaire de connexion 
 
 Email = emailCo
-mot de passe =mdpCo
+mot de passe = mdpCo

@@ -14,17 +14,8 @@
 <body>
     
 
-
-    <!-- Formulaire d'inscription  -->
-    <div class="container py-5 bg-light">
-            <h1 class="display-3 text-dark text-center">FOMULAIRE D'INSCRIPTION</h1>
-
-    <form method ="POST">
-        <div class="row">
-
-        <div class="col-md-6">
             <div class="bg-success ps-2 pe-2 pt-1 pb-4">
-            <label for="exampleInputNom" class="form-label text-white ">NOM</label>
+            <label for="exampleInputNom" class="form-label text-white ">Nom</label>
             <input type="text" class="form-control" name="nom" placeholder="nom" required>
             </div>
         </div>
