@@ -1,0 +1,16 @@
+Formulaire d'inscription
+
+nom = nom
+prenom = prenom
+pseudo = pseudo
+phone = phone
+Date de naissance = dob
+email = email
+mot de passe = mdp
+groupe = groupe
+question secrète = question
+
+Formulaire de connexion 
+
+Email = emailCo
+mot de passe =mdpCo

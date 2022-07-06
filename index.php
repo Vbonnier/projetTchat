@@ -15,7 +15,7 @@
     
 
 
-    
+    <!-- Formulaire d'inscription  -->
     <div class="container py-5 bg-light">
             <h1 class="display-3 text-dark text-center">FOMULAIRE D'INSCRIPTION</h1>
 
@@ -46,14 +46,14 @@
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputTel" class="form-label text-white">Téléphone</label>
-            <input type="text" class="form-control" name="telephone" placeholder="téléphone" required>
+            <input type="text" class="form-control" name="phone" placeholder="téléphone" required>
             </div>
         </div>
 
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputDOB" class="form-label text-white">Date de Naissance</label>
-            <input type="date" class="form-control" name="DOB"placeholder="dateDeNaissance" required>
+            <input type="date" class="form-control" name="dob"placeholder="dateDeNaissance" required>
             </div>
         </div>
 
@@ -67,14 +67,14 @@
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputMdP" class="form-label text-white">Mot de passe</label>
-            <input type="password" class="form-control" name="MdP" placeholder="MdP" required>
+            <input type="password" class="form-control" name="mdp" placeholder="MdP" required>
             </div>
         </div>    
 
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputGroupe" class="form-label text-white">Groupe</label>
-            <input type="text" id="#group" class="form-control" name="groupe" placeholder="groupe" required>
+            <input type="text" id="#group" class="form-control" name="groupe" placeholder="groupe">
             </div>
         </div>
 
@@ -94,7 +94,7 @@
     </div>
     </div>
 
-
+    <!-- Formulaire de connexion -->
     <div class="container py-5 bg-light">
         <div class="row">
     <h1 class="display-3 text-dark text-center">FORMULAIRE DE CONNEXION</h1>
@@ -103,15 +103,15 @@
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4 ">
             <label for="exampleInputEmail" class="form-label text-white ">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="email">
+            <input type="email" class="form-control" name="emailCo" placeholder="email">
         </div>
         </div>
 
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
         <label for="exampleInputMdP" class="form-label text-white ">MdP</label>
-            <input type="password" class="form-control name="MdP" placeholder="MdP" required>
-            <button type="submit" class="btn btn-lg btn-primary" name="bouton2" >Connexion</button>
+            <input type="password" class="form-control" name="mdpCo" placeholder="MdP" required>
+            <button type="submit" class="btn btn-lg btn-primary" name="bouton2">Connexion</button>
         </div>
         </div>
             
