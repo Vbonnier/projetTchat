@@ -13,11 +13,12 @@
         
         if(empty($moi)){
             echo "Log error";
+            header('location:index.php');
         }else{
             echo 'Tu es connecté';
             session_start();
             $_SESSION["connecte"]=1;
-            header('Location:index.php');
+            header('Location:discussion.php');
 
         }
 
