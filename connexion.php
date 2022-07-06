@@ -12,8 +12,8 @@
         // var_dump ($moi);
         
         if(empty($moi)){
-            echo "Log error";
-            header('location:index.php');
+            header('Location:index.php');
+
         }else{
             echo 'Tu es connecté';
             session_start();
