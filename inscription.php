@@ -1,3 +1,24 @@
+<?php
+    include_once("header.php");
+
+
+    if(isset($_POST['action'])=='inscription' && !empty($_POST['pseudo']) && !empty($_POST['mdp']) && !empty($_POST['email']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['phone']) && !empty($_POST['question'])) {
+    $sql="INSERT INTO utilisateur (user_pseudo,user_pass,user_mail,user_name,user_forname,user_phone,user_question) VALUES (:pseudo,:mdp,:email,:nom,:prenom,:phone,:question)";
+    $requete=$connexion->prepare($sql);
+    $requete->execute(array(
+        ':pseudo' => $_POST['pseudo'],
+        ':mdp' => $_POST['mdp'],
+        ':email' => $_POST['email'],
+        ':nom' => $_POST['nom'],
+        ':prenom' => $_POST['prenom'],
+        ':phone' => $_POST['phone'],
+        ':question' => $_POST['question']
+
+        )
+    );
+    header('location:finalisation.php')
+}   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +66,7 @@
         <div class="col-md-6">
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputTel" class="form-label text-white">Téléphone</label>
-            <input type="text" class="form-control" name="telephone" placeholder="téléphone" required>
+            <input type="text" class="form-control" name="phone" placeholder="téléphone" required>
             </div>
         </div>
 
@@ -81,7 +102,9 @@
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputQuestion" class="form-label text-white">Question secrète</label>
             <input type="text" class="form-control" name="question" placeholder="question secrète" required>
-            <button type="submit" class="btn btn-lg btn-primary" name="bouton1" >valider</button>
+            <button type="submit" class="btn btn-lg btn-primary" name="inscription" >valider</button>
+            <input type="hidden" name="action" value="inscription">
+
         </div>
 
         </div>

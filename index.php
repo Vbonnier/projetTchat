@@ -1,3 +1,11 @@
+
+<?php
+
+include_once("header.php");
+include("connexion.php");
+
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -102,7 +110,7 @@
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
         <label for="exampleInputMdP" class="form-label text-white ">MdP</label>
             <input type="password" class="form-control" name="mdpCo" placeholder="MdP" required>
-            <button type="submit" class="btn btn-lg btn-primary" name="bouton2">Connexion</button>
+            <button type="submit" class="btn btn-lg btn-primary" name="connexion">Connexion</button>
         </div>
         </div>
             
@@ -113,15 +121,3 @@
 </body>
 </html>
 
-
-
-<?php
-
-include_once("header.php");
-
-
-
-
-
-
-?>
