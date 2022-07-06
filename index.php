@@ -16,8 +16,8 @@
 
 
     
-    <div class="container">
-            <h1 class="col-md-12">FOMULAIRE D'INSCRIPTION</h1>
+    <div class="container py-5 bg-light">
+            <h1 class="display-3 text-dark text-center">FOMULAIRE D'INSCRIPTION</h1>
 
     <form method ="POST">
         <div class="row">
@@ -82,29 +82,43 @@
         <div class="bg-success ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputQuestion" class="form-label text-white">Question secrète</label>
             <input type="text" class="form-control" name="question" placeholder="question secrète" required>
+            <button type="submit" class="btn btn-lg btn-primary" name="bouton1" >valider</button>
         </div>
 
         </div>
         
-        <div class="col-md-6 pb-5">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
-            <label for="exampleBtnValidation" class="form-label text-white">Validation</label>
-            <button type="submit" class="form-control" name="bouton1" >valider</button>
-        </div>
-        </div>
+       
             
 
     </form>
     </div>
     </div>
 
-    <h1>FORMULAIRE DE CONNEXION</h1>
+
+    <div class="container py-5 bg-light">
+        <div class="row">
+    <h1 class="display-3 text-dark text-center">FORMULAIRE DE CONNEXION</h1>
     <form method="post">
-            <input type="email" name="email" placeholder="email">
-            <input type="password" name="MdP" placeholder="MdP" required>
-            <button type="submit" class="btn2" name="bouton2" >Connexion</button>
+
+        <div class="col-md-6">
+        <div class="bg-success ps-2 pe-2 pt-1 pb-4 ">
+            <label for="exampleInputEmail" class="form-label text-white ">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="email">
+        </div>
+        </div>
+
+        <div class="col-md-6">
+        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <label for="exampleInputMdP" class="form-label text-white ">MdP</label>
+            <input type="password" class="form-control name="MdP" placeholder="MdP" required>
+            <button type="submit" class="btn btn-lg btn-primary" name="bouton2" >Connexion</button>
+        </div>
+        </div>
+            
 
         </form>
+        </div>
+        </div>
 </body>
 </html>
 

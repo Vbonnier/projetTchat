@@ -1,7 +1,13 @@
-*{
+* {
     box-sizing: border-box;
+    margin: auto;
+    padding: auto;
 }
 
 body {
     background-image: url(tchat.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-position: left; */
+    /* background-size: cover; */
 }
+
