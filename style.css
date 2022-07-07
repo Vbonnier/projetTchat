@@ -1,26 +1,18 @@
-/* * {
+* {
     box-sizing: border-box;
     margin: auto;
-    padding: auto;
+    padding: 0;
 }
-
 body {
-    background-image: url(tchat.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: cover;
-} */
-
-
-body {
-    background-image: url(tchat.jpg);
+    background-image: url(logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
     font:12px arial;
     color: #222;
     text-align:center;
-    padding:35px; }
+    padding:35px; 
+}
 
 form, p, span {
     margin:0;
@@ -37,8 +29,9 @@ a {
 #wrapper, #loginform {
     margin:0 auto;
     padding-bottom:25px;
-    background:#EBF4FB;
-    width:504px;
+    background:#6084a0;
+    width:570px;
+    height: 800px;
     border:1px solid #ACD8F0; }
   
 #loginform { padding-top:18px; }
@@ -50,14 +43,15 @@ a {
     margin:0 auto;
     margin-bottom:25px;
     padding:10px;
-    background:#fff;
-    height:270px;
+    background:rgb(255, 255, 255);
+    height:600px;
     width:430px;
     border:1px solid #ACD8F0;
     overflow:auto; }
   
 #usermsg {
     width:395px;
+    height: 50px;
     border:1px solid #ACD8F0; }
   
 #submit { width: 60px; }
@@ -71,3 +65,4 @@ a {
 .logout { float:right; }
   
 .msgln { margin:0 0 2px 0; }
+

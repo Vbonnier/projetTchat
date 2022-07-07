@@ -4,6 +4,13 @@
 include_once("header.php");
 include("connexion.php");
 
+if($_SERVER['REQUEST_METHOD']==='GET'){
+    if(!empty(isset($_GET['save'])) && $_GET['save']=="yes"){
+        setcookie("modeview","dark", time()+86400);
+        header("location:index.php");
+        exit;
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -40,6 +47,10 @@ include("connexion.php");
         <label for="exampleInputMdP" class="form-label text-white ">MdP</label>
             <input type="password" class="form-control" name="mdpCo" placeholder="MdP" required>
             <button type="submit" class="btn btn-lg btn-primary" name="connexion">Connexion</button>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault" onclick=" ">Gardez mes identifiants en mémoire</label>
         </div>
         </div>
             
