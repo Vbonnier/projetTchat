@@ -43,12 +43,6 @@
         
         </div>
 </div>
-<<<<<<< HEAD
-
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-=======
->>>>>>> ea3263c356fbdc1f038691c5dd376a3a94d575a4
 <script type="text/javascript">
 // jQuery Document
 $(document).ready(function(){
