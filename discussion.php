@@ -15,7 +15,7 @@
 </head>
 <body>
 
-
+<script src="tchat.js"></script>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6 " id="wrapper">
@@ -29,8 +29,8 @@
      
     </div>        
             <form name="message" action="">
-                <input name="usermsg" type="text" id="usermsg" size="63" />
-                <button class=" btn btn-secondary">SEND</button>
+                <input name="usermsg" type="text" onsubmit="return false;" id="usermsg" size="63" />
+                <button class=" btn btn-secondary" onsubmit="return false;" id="valid">SEND</button>
                 
             </form>
 
@@ -48,8 +48,8 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
 // jQuery Document
-$(document).ready(function(){
+// $(document).ready(function(){
  
-});
+// });
 </script>
 </body>
