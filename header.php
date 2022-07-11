@@ -4,7 +4,7 @@
 session_start();
 
 
-DEFINE("BDD", "tchatZV");
+DEFINE("BDD", "chatZV");
 DEFINE("USER", "root");
 DEFINE("HOST", "localhost");
 DEFINE("PASSW", "");
