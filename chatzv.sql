@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 11 juil. 2022 à 12:01
+-- Généré le : lun. 11 juil. 2022 à 12:10
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 8.1.6
 
@@ -31,7 +31,7 @@ USE `chatzv`;
 
 CREATE TABLE `messagerie` (
   `message_id` int(11) NOT NULL,
-  `message_dh_utc` datetime DEFAULT NULL,
+  `message_dh_utc` datetime NOT NULL DEFAULT current_timestamp(),
   `message_contenu` varchar(250) NOT NULL,
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -81,14 +81,16 @@ INSERT INTO `utilisateur` (`user_id`, `user_pseudo`, `user_pass`, `user_mail`, `
 --
 ALTER TABLE `messagerie`
   ADD PRIMARY KEY (`message_id`),
-  ADD KEY `Id_Utilisateur` (`user_id`);
+  ADD KEY `Id_Utilisateur` (`user_id`),
+  ADD KEY `message_dh_utc` (`message_dh_utc`);
 
 --
 -- Index pour la table `recevoir`
 --
 ALTER TABLE `recevoir`
   ADD PRIMARY KEY (`user_id`,`message_id`),
-  ADD KEY `Id_Message` (`message_id`);
+  ADD KEY `Id_Message` (`message_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Index pour la table `utilisateur`
@@ -99,7 +101,7 @@ ALTER TABLE `utilisateur`
   ADD KEY `user_mail` (`user_mail`),
   ADD KEY `user_name` (`user_name`),
   ADD KEY `user_forname` (`user_forename`),
-  ADD KEY `user_name_2` (`user_name`);
+  ADD KEY `user_forenameuser_name` (`user_forename`,`user_name`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
