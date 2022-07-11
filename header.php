@@ -3,6 +3,7 @@
 
 session_start();
 
+echo($_SESSION);
 
 DEFINE("BDD", "chatZV");
 DEFINE("USER", "root");

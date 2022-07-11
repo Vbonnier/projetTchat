@@ -21,6 +21,7 @@ include_once("header.php");
     <script src="tchat.js"></script>
 
     <?php include("listUser.php")?>
+    <?php include("ajoutMessage.php")?>
 
 </head>
 <body>
@@ -39,7 +40,7 @@ include_once("header.php");
             <div class="col-md-6">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
-                <button class=" btn btn-secondary" id="valid" >SEND</button>
+                <button class=" btn btn-secondary" name="action" value="add_comment" id="valid" >SEND</button>
             </div>
             </div>
         </div>
@@ -47,7 +48,7 @@ include_once("header.php");
      
      
 
-    <div class= "col-md-4 ms-3 border border-lightpt-1 ">
+    <div class= "col-md-4 ms-3 border border-lightpt-1" name="connected">
         <p class="display-5 text-center text-light pb-2">En ligne</p>
 
         <div class="col-md-12 mb-2 border border-light bg-light " >  

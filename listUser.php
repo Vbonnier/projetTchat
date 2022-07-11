@@ -13,8 +13,9 @@
 
     // fetch the next row
     while (($row = $statement->fetch(PDO::FETCH_ASSOC)) !== false) {
-    echo $row['user_pseudo'] .'<br>';
+    echo ($row['user_pseudo'] .'<br>');
     }
+
     //On créé un tableau
 
     $userArray=[];
