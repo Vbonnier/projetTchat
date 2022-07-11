@@ -17,15 +17,15 @@ if(isset($_POST["connexion"]))
             header('Location:index.php');
         }else{
             if(!password_verify($pass ,$moi['user_pass'])){
-                header('Location:index.php');}
+                header('Location:index.php');
             }else{
             session_start();
             $_SESSION["connecte"]=1;
-            $_SESSION["user"]["id"]=$moi["user_id"];
+            $_SESSION["user"]=$moi;
             header('Location:discussion.php');
+            }
         }
     }
-
     
         
     ?>
