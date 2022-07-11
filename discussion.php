@@ -51,22 +51,14 @@ include_once("header.php");
 
         <div class="col-md-12 mb-2 border border-light" >  
         <img src="Seiya.jpg" class="img-fluid rounded-circle w-25 p-1">
-       
         </div>
 
         <div class="col-md-12 mb-2 border border-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
-       
         </div>
 
         <div class="col-md-12 mb-2 border border-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
-        
-        <div class="row">
-            <div class="col-md-3 bg-light">
-                <input type="submit" >
-            </div>
-            
         </div>
 
         <div class="col-md-12 mb-2 border border-light" >  
