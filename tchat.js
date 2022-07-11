@@ -28,7 +28,7 @@ document.getElementById("usermsg").value = "";
 function ajoutMessage(){
     // On récupère le message
 
-    let message = document.querySelector("#usermsg").value 
+    const message = document.querySelector("#usermsg").value;
     
     //On vérifie si le message n'est pas vide
 
@@ -40,24 +40,26 @@ function ajoutMessage(){
 
         console.log(donnees)};
 
-        fetch('listUser.php')
-    .then(
-    function(response) {
-        if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-            response.status);
-        return;
+        const options={
+            method: 'POST',
+            body: JSON.stringify({
+                message: message
+            })
         };
 
-        // Examine the text in the response
-        response.json()
-        .then(function(data) {
+        fetch('ajoutMessage.php', options)
+    .then(response=>response.json())
+    .then(data=>{
         console.log(data);
-        });
-    }
-    )
-    .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-    });
-
+        document.querySelector('#chatbox').innerHTML = data.message;
+    })
 }
+
+// setInterval(function(){
+//     fetch('discussion.php')
+//     .then(response=>response.text())
+//     .then(data=>{
+//     document.querySelector("#usermsg").innerHTML=data;
+//     })}, 1000);
+
+

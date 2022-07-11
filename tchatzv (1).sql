@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 05 juil. 2022 à 16:47
+-- Généré le : lun. 11 juil. 2022 à 11:28
 -- Version du serveur : 10.4.24-MariaDB
 -- Version de PHP : 8.1.6
 
@@ -18,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `tchat`
+-- Base de données : `tchatzv`
 --
+CREATE DATABASE IF NOT EXISTS `tchatzv` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `tchatzv`;
 
 -- --------------------------------------------------------
 
@@ -30,7 +32,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `messagerie` (
   `Id_Message` int(11) NOT NULL,
   `msg_dh_utc` datetime DEFAULT NULL,
-  `message_contenu` varchar(250) DEFAULT NULL,
+  `message_contenu` varchar(250) NOT NULL,
   `Id_Utilisateur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -53,10 +55,22 @@ CREATE TABLE `recevoir` (
 
 CREATE TABLE `utilisateur` (
   `Id_Utilisateur` int(11) NOT NULL,
-  `user_name` varchar(50) DEFAULT NULL,
-  `user_pass` varchar(50) DEFAULT NULL,
-  `user_mail` varchar(50) DEFAULT NULL
+  `user_pseudo` varchar(50) NOT NULL,
+  `user_pass` varchar(50) NOT NULL,
+  `user_mail` varchar(50) NOT NULL,
+  `user_phone` varchar(50) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `user_forname` varchar(50) NOT NULL,
+  `user_question` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`Id_Utilisateur`, `user_pseudo`, `user_pass`, `user_mail`, `user_phone`, `user_name`, `user_forname`, `user_question`) VALUES
+(1, 'Korials', 'dqdq', 'vincentbonnier49@gmail.com', '0611408622', 'Bonnier', 'Vincent', 'dqs'),
+(2, 'Olka', 'dqdq', 'bonnier.20100@gmail.com', '010120121', 'Bonnier', 'Vincent', 'dqs');
 
 --
 -- Index pour les tables déchargées
@@ -81,6 +95,22 @@ ALTER TABLE `recevoir`
 --
 ALTER TABLE `utilisateur`
   ADD PRIMARY KEY (`Id_Utilisateur`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `messagerie`
+--
+ALTER TABLE `messagerie`
+  MODIFY `Id_Message` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `utilisateur`
+--
+ALTER TABLE `utilisateur`
+  MODIFY `Id_Utilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Contraintes pour les tables déchargées
