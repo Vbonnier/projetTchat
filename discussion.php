@@ -37,10 +37,10 @@ include_once("header.php");
      
             <div id="chatbox"></div>
             <div class="col-md-6">
-            <form name="message" action="">
+            <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
-                <button class=" btn btn-secondary" id="btn" >SEND</button>
-            </form>
+                <button class=" btn btn-secondary" id="valid" >SEND</button>
+            </div>
             </div>
         </div>
     </div> 
