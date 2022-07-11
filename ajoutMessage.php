@@ -2,17 +2,17 @@
 
 
 if(isset($_POST['action'])=='add_comment'){
-    $sql="INSERT INTO messagerie(msg_dh_utc,message_contenu,Id_Utilisateur) VALUES(date,:usermsg,$id)";
+    $sql="INSERT INTO messagerie(message_contenu,user_id) VALUES(:usermsg,$id)";
     $requete=$connexion->prepare($sql);
-    $requete->execute(array(
-        ':titre' => $_POST['titre'],
-        ':body' => $_POST['body']
+    $requete->execute(array(    
+        ':usermsg' => $_POST['message_contenu'],
+        $id => $_POST['user_id']
     )
     );
 
 
-    $message = "";
-    echo json_encode($message);
+    // $message = "";
+    // echo json_encode($message);
 
     }
 ?>

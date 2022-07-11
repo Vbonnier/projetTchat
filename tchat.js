@@ -51,7 +51,7 @@ function ajoutMessage(){
     .then(response=>response.json())
     .then(data=>{
         console.log(data);
-        document.querySelector('#chatbox').innerHTML = data.message;
+        document.querySelector('#chatbox').innerHTML = data;
     })
 }
 

@@ -15,10 +15,11 @@
             header('Location:index.php');
 
         }else{
+            session_start();
             $_SESSION["connecte"]=1;
-            $_SESSION['user']["id"]=$moi["ID_Utilisateur"];
+            $_SESSION['user']["id"]=$moi["user_id"];
             header('Location:discussion.php');
-            echo($_SESSION["user"]["id"]);
+           
 
         }
 

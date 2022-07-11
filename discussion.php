@@ -21,6 +21,7 @@ include_once("header.php");
     <script src="tchat.js"></script>
 
     <?php include("listUser.php")?>
+    <?php include("ajoutMessage.php")?>
 
 </head>
 <body>
