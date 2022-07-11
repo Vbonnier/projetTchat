@@ -1,3 +1,9 @@
+<?php
+
+include_once("header.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -12,6 +18,10 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
     
     <link rel="stylesheet" href="style.css">
+    <script src="tchat.js"></script>
+
+    <?php include("listUser.php")?>
+
 </head>
 <body>
 
@@ -52,6 +62,11 @@
         <div class="col-md-12 mb-2 border border-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         
+        <div class="row">
+            <div class="col-md-3 bg-light">
+                <input type="submit" >
+            </div>
+            
         </div>
 
         <div class="col-md-12 mb-2 border border-light" >  
@@ -93,8 +108,8 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
 // jQuery Document
-$(document).ready(function(){
+// $(document).ready(function(){
  
-});
+// });
 </script>
 </body>
