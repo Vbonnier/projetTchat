@@ -43,10 +43,9 @@ include("connexion.php");
             <input type="password" class="form-control" name="mdpCo" placeholder="MdP" required>
             <button type="submit" class="btn btn-lg btn-primary" name="connexion">Connexion</button>
         </div>
-        <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault" onclick=" ">Gardez mes identifiants en mémoire</label>
-        </div>
+
+        <div class="col">
+            <p> Pas de compte ? <a href="inscription.php">Inscrivez-vous</a></p>
         </div>
             
 

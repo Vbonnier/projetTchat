@@ -15,10 +15,10 @@
             header('Location:index.php');
 
         }else{
-            echo 'Tu es connecté';
-            session_start();
             $_SESSION["connecte"]=1;
+            $_SESSION['user']["id"]=$moi["ID_Utilisateur"];
             header('Location:discussion.php');
+            echo($_SESSION["user"]["id"]);
 
         }
 

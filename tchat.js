@@ -12,10 +12,16 @@ window.onload = () => {
 function verifEntree(e){    
     if(e.key == "Enter"){
         // e.preventDefault();
-        ajoutMessage()
+        ajoutMessage();
+        reinit()
+
     }
 }
 
+function reinit() 
+{
+document.getElementById("usermsg").value = "";
+}
 
 
 
@@ -54,5 +60,4 @@ function ajoutMessage(){
     console.log('Fetch Error :-S', err);
     });
 
-    }
-
+}
