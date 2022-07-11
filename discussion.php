@@ -34,8 +34,23 @@ include_once("header.php");
                 <p class="logout alert-warning"><a id="exit" href="#">Exit Chat</a></p>
                 <div style="clear:both"></div>
             </div>
-     
-            <div id="chatbox" ></div>
+
+            <div id="chatbox" >
+
+            <script>    
+            
+            setInterval(function()){
+                fetch('messages.php')
+                .then(response=>response.json())
+                .then(data =>{
+                    document.querySelector('#chatbox').innerHTML = data;
+
+                })
+            }
+
+            </script>
+        
+            </div>
             <div class="col-md-6">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
@@ -50,29 +65,6 @@ include_once("header.php");
     <div class= "col-md-4 ms-3 border border-lightpt-1" name="connected">
         <p class="display-5 text-center text-light pb-2">En ligne</p>
         <?php include("listUser.php")?>
-        <div class="col-md-12 mb-2 border border-light bg-light " >  
-        <img src="iconPerson.png" class="img-fluid w-25 p-1">
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light">  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
         
     </div>
 
