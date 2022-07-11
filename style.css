@@ -1,16 +1,15 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: auto;
     padding: 0;
-}
+} */
+
 body {
     background-image: url(logo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    font:12px arial;
-    color: #222;
-    text-align:center;
+    
     padding:35px; 
 }
 
@@ -21,38 +20,44 @@ form, p, span {
 input { font:12px arial; }
   
 a {
-    color:#0000FF;
-    text-decoration:none; }
+    color:#2222c7;
+    text-decoration:none;
+ }
   
     a:hover { text-decoration:underline; }
   
-#wrapper, #loginform {
+#wrapper {
     margin:0 auto;
     padding-bottom:25px;
-    background:#6084a0;
-    width:570px;
+    background:#432b4c;
+    width:550px;
     height: 800px;
-    border:1px solid #ACD8F0; }
+    border:none; 
+}
   
-#loginform { padding-top:18px; }
-  
-    #loginform p { margin: 5px; }
+
+img.rounded-circle.img-fluid{
+    border-radius:50% !important;  
+}
+   
   
 #chatbox {
     text-align:left;
     margin:0 auto;
     margin-bottom:25px;
     padding:10px;
-    background:rgb(255, 255, 255);
+    background:rgb(255, 255, 255)  ;
     height:600px;
-    width:430px;
+    width:530px;
     border:1px solid #ACD8F0;
     overflow:auto; }
   
 #usermsg {
-    width:395px;
-    height: 50px;
+    width:530px;
+    height: 60px;
     border:1px solid #ACD8F0; }
+
+
   
 #submit { width: 60px; }
   
@@ -60,9 +65,18 @@ a {
   
 #menu { padding:12.5px 25px 12.5px 25px; }
   
-.welcome { float:left; }
+.welcome { 
+    float:left;
+    color: antiquewhite;
+
+}
   
 .logout { float:right; }
   
 .msgln { margin:0 0 2px 0; }
+
+#exit {
+    color: #6200ff !important;
+}
+
 

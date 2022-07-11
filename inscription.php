@@ -16,7 +16,7 @@
 
         )
     );
-    header('location:finalisation.php')
+    header('location:finalisation.php');
 }   
 ?>
 <!DOCTYPE html>

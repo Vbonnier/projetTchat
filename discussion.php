@@ -16,33 +16,78 @@
 <body>
 
 
-<div class="container-fluid">
+<div class="container d-flex flex-md-row flex-column">
     <div class="row">
-        <div class="col-md-6 " id="wrapper">
+        <div class="col-md-9 ms-5" id="wrapper" >
             <div id="menu">
                 <p class="welcome">Welcome, <b></b></p>
-                <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
+                <p class="logout alert-warning"><a id="exit" href="#">Exit Chat</a></p>
                 <div style="clear:both"></div>
             </div>
      
             <div id="chatbox"></div>
-     
-    </div>        
+            <div class="col-md-6">
             <form name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
-                <button class=" btn btn-secondary">SEND</button>
-                
+                <button class=" btn btn-secondary" id="btn" >SEND</button>
             </form>
-
-    </div>
-
-        <div class="row">
-        <div class="col-md-3 bg-light">
-                <input type="submit" >
+            </div>
         </div>
+    </div> 
+     
+     
+
+    <div class= "col-md-4">  
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="img-fluid rounded-circle w-25">
+       
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25" >
+       
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25" >
         
         </div>
-</div>
+
+        <div class="col-md-12 ms-5 mb-2 " >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2">  
+        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25" >
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25" >
+        </div>
+
+        <div class="col-md-12 ms-5 mb-2" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        </div>
+       
+        
+    </div>
+
+        
+
+</div> 
 
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
