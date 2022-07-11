@@ -11,18 +11,18 @@ if(isset($_POST["connexion"]))
         $requete->execute(array($mail));
         
         $moi = $requete->fetch();
-        // var_dump ($moi);
         
         if(empty($moi)){
             header('Location:index.php');
         }else{
             if(!password_verify($pass ,$moi['user_pass'])){
-                header('Location:index.php');}
+                header('Location:index.php');
             }else{
-            session_start();
-            $_SESSION["connecte"]=1;
-            $_SESSION["user"]["id"]=$moi["user_id"];
-            header('Location:discussion.php');
+                session_start();
+                $_SESSION["connecte"]=1;
+                $_SESSION["user"] = $moi;
+                header('Location:discussion.php');
+            }
         }
     }
 
