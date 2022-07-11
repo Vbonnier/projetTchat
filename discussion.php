@@ -20,7 +20,6 @@ include_once("header.php");
     <link rel="stylesheet" href="style.css">
     <script src="tchat.js"></script>
 
-    <?php include("listUser.php")?>
     <?php include("ajoutMessage.php")?>
 
 </head>
@@ -50,7 +49,7 @@ include_once("header.php");
 
     <div class= "col-md-4 ms-3 border border-lightpt-1" name="connected">
         <p class="display-5 text-center text-light pb-2">En ligne</p>
-
+        <?php include("listUser.php")?>
         <div class="col-md-12 mb-2 border border-light bg-light " >  
         <img src="iconPerson.png" class="img-fluid w-25 p-1">
         </div>

@@ -1,9 +1,12 @@
+
+Finalisation
+
 <script>
-
+   
 setTimeout(function() {
-   <?php header('location:index.php')?>
-}, 50000);
+   document.location.href="index.php"; 
 
-
-
+}, 5000);
 </script>
+
+

@@ -3,9 +3,9 @@
 
 session_start();
 
-echo($_SESSION);
+var_dump($_SESSION);
 
-DEFINE("BDD", "chatZV");
+DEFINE("BDD", "chatzv");
 DEFINE("USER", "root");
 DEFINE("HOST", "localhost");
 DEFINE("PASSW", "");
