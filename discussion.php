@@ -1,3 +1,9 @@
+<?php
+
+include_once("header.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -12,6 +18,10 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
     
     <link rel="stylesheet" href="style.css">
+    <script src="tchat.js"></script>
+
+    <?php include("listUser.php")?>
+
 </head>
 <body>
 
@@ -27,11 +37,11 @@
                 <div id="chatbox"></div>
                 
             </div>        
-            <form name="message" action="">
-                <input name="usermsg" type="text" id="usermsg" size="63" />
+            <div name="message" action="">
+                <input name="usermsg" type="text"  id="usermsg" size="63" />
                 <button class=" btn btn-secondary"  id="valid">SEND</button>
                 
-            </form>
+            </div>
             
         </div>
         
@@ -44,7 +54,6 @@
     </div>
     
     
-    <script src="tchat.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
 // jQuery Document
