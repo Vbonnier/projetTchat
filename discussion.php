@@ -37,49 +37,49 @@
      
      
 
-    <div class= "col-md-4">  
+    <div class= "col-md-4 ms-3 border border-light pt-5 bg-secondary">  
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="img-fluid rounded-circle w-25">
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="img-fluid rounded-circle w-25 p-1">
        
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25" >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
        
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25" >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         
         </div>
 
-        <div class="col-md-12 ms-5 mb-2 " >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 ms-5 mb-2">  
-        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        <div class="col-md-12 mb-2 border border-light">  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25" >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25" >
+        <div class="col-md-12 mb-2 border border-light" >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 ms-5 mb-2" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 " >
+        <div class="col-md-12 mb-2 border border-light " >  
+        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
        
         
