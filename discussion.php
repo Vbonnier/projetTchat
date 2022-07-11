@@ -28,7 +28,7 @@ include_once("header.php");
 
 <div class="container d-flex flex-md-row flex-column">
     <div class="row">
-        <div class="col-md-9 ms-5" id="wrapper" >
+        <div class="col-md-9" id="wrapper" >
             <div id="menu">
                 <p class="welcome">Welcome, <b></b></p>
                 <p class="logout alert-warning"><a id="exit" href="#">Exit Chat</a></p>
@@ -51,45 +51,28 @@ include_once("header.php");
         <p class="display-5 text-center text-light pb-2">En ligne</p>
 
         <div class="col-md-12 mb-2 border border-light bg-light " >  
-        <img src="Seiya.jpg" class="img-fluid rounded-circle w-25 p-1">
+        <img src="iconPerson.png" class="img-fluid w-25 p-1">
         </div>
 
         <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
+        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
         </div>
 
         <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
+        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
         </div>
 
         <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
+        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
         </div>
 
         <div class="col-md-12 mb-2 border border-light bg-light">  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
+        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
         </div>
 
         <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
+        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
         </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
-        </div>
-       
         
     </div>
 
