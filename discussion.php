@@ -47,45 +47,46 @@ include_once("header.php");
      
      
 
-    <div class= "col-md-4 ms-3 border border-light pt-5 bg-secondary">  
+    <div class= "col-md-4 ms-3 border border-lightpt-1 ">
+        <p class="display-5 text-center text-light pb-2">En ligne</p>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light " >  
         <img src="Seiya.jpg" class="img-fluid rounded-circle w-25 p-1">
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light">  
+        <div class="col-md-12 mb-2 border border-light bg-light">  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light" >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
 
-        <div class="col-md-12 mb-2 border border-light " >  
+        <div class="col-md-12 mb-2 border border-light bg-light" >  
         <img src="Seiya.jpg" class="rounded-circle w-25 p-1" >
         </div>
        
