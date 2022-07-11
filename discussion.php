@@ -35,7 +35,7 @@ include_once("header.php");
                 <div style="clear:both"></div>
             </div>
      
-            <div id="chatbox"></div>
+            <div id="chatbox" ></div>
             <div class="col-md-6">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
