@@ -39,14 +39,13 @@ include_once("header.php");
 
             <script>    
             
-            setInterval(function()){
+            setInterval(function(){
                 fetch('messages.php')
                 .then(response=>response.json())
                 .then(data =>{
                     document.querySelector('#chatbox').innerHTML = data;
-
                 })
-            }
+            },5000);
 
             </script>
         
@@ -54,7 +53,7 @@ include_once("header.php");
             <div class="col-md-6">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
-                <button class=" btn btn-secondary" name="action" value="add_comment" id="valid" >SEND</button>
+                <button class=" btn btn-secondary" name="action" action="action" value="add_comment" id="valid" >SEND</button>
             </div>
             </div>
         </div>
@@ -72,17 +71,7 @@ include_once("header.php");
 </div> 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
 
-    setInterval(function(){
-        fetch('messages.php')
-            .then(response => response.json())
-            .then(data => {
-                document.querySelector("#chatbox").innerHTML = data;
-        });
-        
-    }, 1000);
 
 </script>
 </body>

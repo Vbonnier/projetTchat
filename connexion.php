@@ -14,9 +14,11 @@ if(isset($_POST["connexion"]))
         
         if(empty($moi)){
             header('Location:index.php');
-        }else{
-            if(!password_verify($pass ,$moi['user_pass'])){
+        }elseif
+            (!password_verify($pass , $moi["user_pass"]))   {
                 header('Location:index.php');
+                echo "mdp invalide";
+                echo $moi['user_pass'];
             }else{
                 session_start();
                 $_SESSION["connecte"]=1;
@@ -24,7 +26,7 @@ if(isset($_POST["connexion"]))
                 header('Location:discussion.php');
             }
         }
-    }
+    
     
         
     ?>
