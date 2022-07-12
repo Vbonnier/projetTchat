@@ -36,7 +36,19 @@ include_once("header.php");
                 <div style="clear:both"></div>
             </div>
      
-            <div id="chatbox" ></div>
+            <div id="chatbox" >
+
+            <script>
+                setInterval(function() {
+                    fetch('messages.php')
+                    .then(response=>response.json())
+                    .then(data =>{
+                        document.querySelector(#chatbox).innerHTML= data;
+                    })
+                },5000);
+
+            </script>
+            </div>
             <div class="col-md-6">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
