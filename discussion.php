@@ -20,7 +20,6 @@ include_once("header.php");
     <link rel="stylesheet" href="style.css">
     <script src="tchat.js"></script>
 
-    <?php include("listUser.php")?>
     <?php include("ajoutMessage.php")?>
 
 </head>
@@ -35,24 +34,26 @@ include_once("header.php");
                 <p class="logout alert-warning"><a id="exit" href="#">Exit Chat</a></p>
                 <div style="clear:both"></div>
             </div>
-     
+
             <div id="chatbox" >
 
-            <script>
-                setInterval(function() {
-                    fetch('messages.php')
-                    .then(response=>response.json())
-                    .then(data =>{
-                        document.querySelector(#chatbox).innerHTML= data;
-                    })
-                },5000);
+            <script>    
+            
+            setInterval(function(){
+                fetch('messages.php')
+                .then(response=>response.json())
+                .then(data =>{
+                    document.querySelector('#chatbox').innerHTML = data;
+                })
+            },5000);
 
             </script>
+        
             </div>
             <div class="col-md-6">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
-                <button class=" btn btn-secondary" name="action" value="add_comment" id="valid" >SEND</button>
+                <button class=" btn btn-secondary" name="action" action="action" value="add_comment" id="valid" >SEND</button>
             </div>
             </div>
         </div>
@@ -62,31 +63,7 @@ include_once("header.php");
 
     <div class= "col-md-4 ms-3 border border-lightpt-1" name="connected">
         <p class="display-5 text-center text-light pb-2">En ligne</p>
-
-        <div class="col-md-12 mb-2 border border-light bg-light " >  
-        <img src="iconPerson.png" class="img-fluid w-25 p-1">
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light">  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-
-        <div class="col-md-12 mb-2 border border-light bg-light" >  
-        <img src="iconPerson.png" class="rounded-circle w-25 p-1" >
-        </div>
-        
+        <?php include("listUser.php")?>        
     </div>
 
         
@@ -94,11 +71,7 @@ include_once("header.php");
 </div> 
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript">
-// jQuery Document
-// $(document).ready(function(){
- 
-// });
+
+
 </script>
 </body>

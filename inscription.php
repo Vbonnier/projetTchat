@@ -3,11 +3,12 @@
 
 
     if(isset($_POST['action'])=='inscription' && !empty($_POST['pseudo']) && !empty($_POST['mdp']) && !empty($_POST['email']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['phone']) && !empty($_POST['question'])) {
-    $sql="INSERT INTO utilisateur (user_pseudo,user_pass,user_mail,user_name,user_forname,user_phone,user_question) VALUES (:pseudo,:mdp,:email,:nom,:prenom,:phone,:question)";
+        try{
+    $sql="INSERT INTO utilisateur (user_pseudo,user_pass,user_mail,user_name,user_forename,user_phone,user_question) VALUES (:pseudo,:mdp,:email,:nom,:prenom,:phone,:question)";
     $requete=$connexion->prepare($sql);
     $requete->execute(array(
         ':pseudo' => $_POST['pseudo'],
-        ':mdp' => $_POST['mdp'],
+        ':mdp' => password_hash($_POST['mdp'], PASSWORD_DEFAULT),
         ':email' => $_POST['email'],
         ':nom' => $_POST['nom'],
         ':prenom' => $_POST['prenom'],
@@ -17,6 +18,10 @@
         )
     );
     header('location:finalisation.php');
+        }
+        catch(PDOException $e){
+            die("Erreur : ". $e->getMessage());
+        }
     }
 ?>
 <!DOCTYPE html>

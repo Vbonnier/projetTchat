@@ -1,5 +1,3 @@
-<?php
-
 <?php 
     require_once("header.php");
 
@@ -10,27 +8,13 @@
 
     try {
         $statement=$connexion->query($query);
+
+        // fetch the next row
+        while (($row = $statement->fetch(PDO::FETCH_ASSOC)) !== false) {
+               echo $row;
     
-   
-    while (($row = $statement->fetch(PDO::FETCH_ASSOC)) !== false) {
-    echo $row;
+        }
+    } catch (PDOException $e) {
+        echo "Erreur : ". $e->getMessage();
     }
-
-    
-
-    $userArray=[];
-
-    // //Je les met dans un array en json
-    // while($displayStmt->fetch()){
-        //create array for json
-        // $userArray[] = [
-        //   "user_pseudo"=>$userID,
-         
-        // ]
-      
-    // echo(json_encode($userArray));
 ?> 
-
-
-
-?>
