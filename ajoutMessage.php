@@ -1,15 +1,27 @@
 <?php
 
-$moi=1;
+require_once("header.php");
 
-// Demander comment 
-if(isset($_POST['action'])=='add_comment'){
-    $sql="INSERT INTO messagerie(message_contenu,user_id) VALUES(:usermsg,$moi)";
-    $requete=$connexion->prepare($sql);
-    $requete->execute(array(    
-        ':usermsg' => $_POST['message_contenu'],
-        $moi['user_id'] => $_POST['user_id']
-    )
-    );
-    }
+
+//     //Envoi du message dans la base de données 
+//     // A compléter
+
+
+
+$message=$_POST["usertxt"];
+echo $message;
+
+    $query = "INSERT INTO messagerie (message_contenu) VALUES (:message_contenu)";
+    try {
+    $requete=$connexion->prepare($query);
+    $requete->execute(array(
+        ":message_contenu" => $message,
+    )); 
+    echo "Message : Envoyé"  ;
+    
+}catch(PDOException $e){
+    echo ("Erreur :" .$e-> getMessage());
+}
+//    echo '{"statut_code":"true", "statut_message":"Le message a bien été envoyé","nouvel_id":"1"}';
+
 ?>

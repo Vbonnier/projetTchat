@@ -8,7 +8,7 @@
     $requete=$connexion->prepare($sql);
     $requete->execute(array(
         ':pseudo' => $_POST['pseudo'],
-        ':mdp' => password_hash($_POST['mdp'], PASSWORD_DEFAULT),
+        ':mdp' =>       password_hash( $_POST['mdp'],PASSWORD_DEFAULT),
         ':email' => $_POST['email'],
         ':nom' => $_POST['nom'],
         ':prenom' => $_POST['prenom'],

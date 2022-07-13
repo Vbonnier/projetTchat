@@ -3,17 +3,15 @@ window.onload = () => {
     let texte = document.querySelector("#usermsg");
     texte.addEventListener("keyup", verifEntree,)
 
-    // On va chercher le bouton "valid"
-    let valid = document.querySelector("#valid");
-    valid.addEventListener("click",ajoutMessage())
+    // // On va chercher le bouton "valid"
+    // let valid = document.querySelector("#valid");
+    // valid.addEventListener("click",ajoutMessage())
 }
 
 
 function verifEntree(e){    
     if(e.key == "Enter"){
-        // e.preventDefault();
         ajoutMessage();
-        reinit()
 
     }
 }
@@ -23,37 +21,30 @@ function reinit()
 document.getElementById("usermsg").value = "";
 }
 
-
-
 function ajoutMessage(){
-    // On récupère le message
 
-    const message = document.querySelector("#usermsg").value;
-    
-    //On vérifie si le message n'est pas vide
+    // On créé un "faux-formulaire avec FormData() (pour pouvoir envoyer sans raffraichir la page)"
+    const formData= new FormData();
+    //On recupère la valeur de usermsg (le champ texte)
+    formData.append('usertxt', document.querySelector('#usermsg').value);
 
-    if(message != ""){
-        //On crée un objet JS
-
-        let donnees={}
-        donnees["message"]= message;
-
-        console.log(donnees)};
-
-        const options={
-            method: 'POST',
-            body: JSON.stringify({
-                message: message
-            })
+    //On determine le JSON
+    const options ={
+        method: 'POST',
+        body : formData,
         };
-
-        fetch('ajoutMessage.php', options)
-    .then(response=>response.json())
+        
+        //On exécute le fetch (qui déclenche le php), on récupère et on console.log 
+    fetch('ajoutMessage.php',options)
+    .then(response=>response.text())
     .then(data=>{
         console.log(data);
-        document.querySelector('#chatbox').innerHTML = data;
     })
+
+    reinit();
+
 }
+
 
 // setInterval(function(){
 //     fetch('discussion.php')
