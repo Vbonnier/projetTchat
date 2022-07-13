@@ -1,6 +1,7 @@
 <?php
 
 include_once("header.php");
+var_dump($_SESSION);
 ?>
 
 
@@ -42,7 +43,7 @@ include_once("header.php");
                         fetch('messages.php').then(response=>response.text()).then(html=>{
                             document.querySelector('#chatbox').innerHTML=html;
                         })
-                    }, 5000);
+                    }, 2000);
                     
                         </script>
                 </div>
