@@ -8,7 +8,7 @@
     $requete=$connexion->prepare($sql);
     $requete->execute(array(
         ':pseudo' => $_POST['pseudo'],
-        ':mdp' => password_hash($_POST['mdp'], PASSWORD_DEFAULT),
+        ':mdp' => $_POST['mdp'],
         ':email' => $_POST['email'],
         ':nom' => $_POST['nom'],
         ':prenom' => $_POST['prenom'],
@@ -41,70 +41,70 @@
 <body>
     
     
-    <div class="container py-5 bg-light">
-            <h1 class="display-3 text-dark text-center">FOMULAIRE D'INSCRIPTION</h1>
+    <div class="container py-5 bg-secondary position-relative opacity-75">
+            <h1 class="display-3 text-light text-center">FOMULAIRE D'INSCRIPTION</h1>
 
     <form method ="POST">
         <div class="row">
 
         <div class="col-md-6">
-            <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+            <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputNom" class="form-label text-white ">NOM</label>
             <input type="text" class="form-control" name="nom" placeholder="nom" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputPrenom" class="form-label text-white">Prénom</label>
             <input type="text" class="form-control" name="prenom" placeholder="prénom" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputPseudo" class="form-label text-white">Pseudo</label>
             <input type="text" class="form-control" name="pseudo" placeholder="pseudo" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputTel" class="form-label text-white">Téléphone</label>
             <input type="text" class="form-control" name="phone" placeholder="téléphone" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputDOB" class="form-label text-white">Date de Naissance</label>
             <input type="date" class="form-control" name="dob"placeholder="dateDeNaissance" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputEmail" class="form-label text-white">Email</label>
             <input type="email" class="form-control" name="email" placeholder="email" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputMdP" class="form-label text-white">Mot de passe</label>
             <input type="password" class="form-control" name="mdp" placeholder="MdP" required>
             </div>
         </div>    
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputGroupe" class="form-label text-white">Groupe</label>
             <input type="text" id="#group" class="form-control" name="groupe" placeholder="groupe" required>
             </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
             <label for="exampleInputQuestion" class="form-label text-white">Question secrète</label>
             <input type="text" class="form-control" name="question" placeholder="question secrète" required>
             <button type="submit" class="btn btn-lg btn-primary" name="inscription" >valider</button>

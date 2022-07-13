@@ -14,12 +14,14 @@ if(isset($_POST["connexion"]))
         
         if(empty($moi)){
             header('Location:index.php');
-        }elseif
-            (!password_verify($pass , $moi["user_pass"]))   {
-                header('Location:index.php');
-                echo "mdp invalide";
-                echo $moi['user_pass'];
-            }else{
+        } 
+        // elseif
+        //     (!password_verify($pass , $moi["user_pass"]))   {
+        //         header('Location:index.php');
+        //         echo "mdp invalide";
+        //         echo $moi['user_pass'];
+        //     } 
+            else{
                 session_start();
                 $_SESSION["connecte"]=1;
                 $_SESSION["user"] = $moi;

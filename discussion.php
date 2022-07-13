@@ -28,7 +28,7 @@ include_once("header.php");
 
 <div class="container d-flex flex-md-row flex-column">
     <div class="row">
-        <div class="col-md-9" id="wrapper" >
+        <div class="col-md-8" id="wrapper" >
             <div id="menu">
                 <p class="welcome">Welcome, <b></b></p>
                 <p class="logout alert-warning"><a id="exit" href="#">Exit Chat</a></p>
@@ -50,24 +50,28 @@ include_once("header.php");
             </script>
         
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4 ms-0">
             <div name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" size="63" />
                 <button class=" btn btn-secondary" name="action" action="action" value="add_comment" id="valid" >SEND</button>
             </div>
             </div>
         </div>
-    </div> 
+    
      
      
-
-    <div class= "col-md-4 ms-3 border border-lightpt-1" name="connected">
+    
+        
+        <div class= "col-md-4 ms-0 border border-light pt-1 w-500 overflow-scroll" style="height: 600px;" name="connected">
+   
         <p class="display-5 text-center text-light pb-2">En ligne</p>
         <?php include("listUser.php")?>        
-    </div>
-
-        
-
+        </div>  
+        <div class=" btn btn-primary col-md-3">
+            <button type="submit" name="button" id="btn" class=" bg-primary border border-primary"><a href="deco.php?deconnexion=oui" class="attribut text-light">Déconnexion</a></button>
+            
+        </div>
+        </div> 
 </div> 
 
 

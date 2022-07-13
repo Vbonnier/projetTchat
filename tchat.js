@@ -55,6 +55,7 @@ function ajoutMessage(){
     })
 }
 
+
 // setInterval(function(){
 //     fetch('discussion.php')
 //     .then(response=>response.text())
