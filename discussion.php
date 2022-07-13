@@ -52,7 +52,7 @@ include_once("header.php");
 
                 <form id="formElem" class="col-md-6">
                     <input name="usertxt" type="text" id="usermsg" size="63" />
-                    <input class=" btn btn-secondary" name="send" value="usermsg"type="submit">SEND</input>
+                    <input class=" btn btn-secondary " name="send" value="usermsg"type="submit">SEND</input>
                 </form> 
 
 <script>
@@ -65,7 +65,6 @@ include_once("header.php");
                 <?php include("listUser.php")?>        
                 <p class="display-5 text-center text-light pb-2">En ligne</p>
             </div>
-    </script> 
             
             
         </div> 
