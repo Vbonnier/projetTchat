@@ -30,8 +30,8 @@ include_once("header.php");
     <div class="row">
         <div class="col-md-8" id="wrapper" >
             <div id="menu">
-                <p class="welcome">Welcome, <b></b></p>
-                <p class="logout alert-warning"><a id="exit" href="#">Exit Chat</a></p>
+                <p class="welcome text-light">Welcome, <b></b></p>
+                <p class="logout alert-warning bg-secondary "><a class="bg-secondary ps-2 pe-2 " id="exit" href="#">Exit Chat</a></p>
                 <div style="clear:both"></div>
             </div>
 
@@ -67,7 +67,7 @@ include_once("header.php");
         <p class="display-5 text-center text-light pb-2">En ligne</p>
         <?php include("listUser.php")?>        
         </div>  
-        <div class=" btn btn-primary col-md-3">
+        <div class=" btn btn-primary col-md-3 ms-0 ">
             <button type="submit" name="button" id="btn" class=" bg-primary border border-primary"><a href="deco.php?deconnexion=oui" class="attribut text-light">Déconnexion</a></button>
             
         </div>
