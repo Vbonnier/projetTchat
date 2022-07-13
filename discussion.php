@@ -1,6 +1,7 @@
 <?php
 
 include_once("header.php");
+var_dump($_SESSION);
 ?>
 
 
@@ -42,7 +43,7 @@ include_once("header.php");
                         fetch('messages.php').then(response=>response.text()).then(html=>{
                             document.querySelector('#chatbox').innerHTML=html;
                         })
-                    }, 5000);
+                    }, 2000);
                     
                         </script>
                 </div>
@@ -61,7 +62,7 @@ include_once("header.php");
 
 
 </div> 
-<div class= "col-md-4 ms-3 border border-lightpt-1" name="connected">
+<div class= "col-md-4 ms-3 border border-lightpt-1 overflow" name="connected">
     <?php include("listUser.php")?>        
     <p class="display-5 text-center text-light pb-2">En ligne</p>
 </div>
