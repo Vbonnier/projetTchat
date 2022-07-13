@@ -22,7 +22,7 @@ document.getElementById("usermsg").value = "";
 }
 
 function ajoutMessage(){
-
+    
     // On créé un "faux-formulaire avec FormData() (pour pouvoir envoyer sans raffraichir la page)"
     const formData= new FormData();
     //On recupère la valeur de usermsg (le champ texte)
@@ -32,7 +32,7 @@ function ajoutMessage(){
     const options ={
         method: 'POST',
         body : formData,
-        };
+        };  
         
         //On exécute le fetch (qui déclenche le php), on récupère et on console.log 
     fetch('ajoutMessage.php',options)
