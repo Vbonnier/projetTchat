@@ -91,7 +91,7 @@ include_once("header.php");
                 <?php include("listUser.php")?>        
                 <p class="display-5 text-center text-light pb-2">En ligne</p>
             </div>
-    </script> -->
+    </script> 
             
             
         </div> 
