@@ -20,7 +20,6 @@ include_once("header.php");
     <link rel="stylesheet" href="style.css">
     <script src="tchat.js"></script>
 
-    <?php include("ajoutMessage.php")?>
 
 </head>
 <body>
@@ -36,33 +35,28 @@ include_once("header.php");
             </div>
 
             <div id="chatbox" >
-
-            <script>    
-            
-            <link rel="stylesheet" href="style.css">
-            <script src="tchat.js"></script>
+                
+            <?php include('messages.php')?>
 
         
             </div>
             <form id="formElem" class="col-md-6">
-                    <input name="usertxt" type="text" id="usermsg" size="63" />
-                    <input class=" btn btn-secondary" name="send" value="usermsg"type="submit">SEND</input>
-                </form> 
-
-<script>
+                <input name="usertxt" type="text" id="usermsg" size="63" />
+                <input class=" btn btn-secondary" name="send" value="usermsg"type="submit">SEND</input>
+            </form> 
+            
+            <script>
                 formElem.onsubmit = async (e) => {
-        e.preventDefault();
+                    e.preventDefault();
                 }
-        </script>
+                </script>
     
-        
-        <div class= "col-md-4 ms-5 border border-light pt-1 w-500 overflow-scroll" style="height: 600px;" name="connected">
-        <p class="display-5 text-center text-light pb-2">En ligne</p>
-        <?php include("listUser.php")?>        
-        </div>  
-        <div class=" btn btn-primary col-md-3 ms-0 ">
-            <button type="submit" name="button" id="btn" class=" bg-primary border border-primary"><a href="deco.php?deconnexion=oui" class="attribut text-light">Déconnexion</a></button>
-            
-            
-        </div> 
-    </body>
+    
+    <div class= "col-md-4 ms-5 border border-light pt-1 w-500 overflow-scroll" style="height: 600px;" name="connected">
+    <p class="display-5 text-center text-light pb-2">En ligne</p>
+    <?php include("listUser.php")?>        
+    </div>  
+    <div class=" btn btn-primary col-md-3 ms-0 ">
+        <button type="submit" name="button" id="btn" class=" bg-primary border border-primary"><a href="deco.php?deconnexion=oui" class="attribut text-light">Déconnexion</a></button>
+    </div> 
+</body>
