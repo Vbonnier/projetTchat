@@ -25,20 +25,20 @@ include("connexion.php");
     
 
     <!-- Formulaire de connexion -->
-    <div class="container py-5 bg-light">
+    <div class="container py-5 bg-secondary w-50 h-50 mt-5 opacity-75">
         <div class="row">
     <h1 class="display-3 text-dark text-center">FORMULAIRE DE CONNEXION</h1>
     <form method="post">
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4 ">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4 ">
             <label for="exampleInputEmail" class="form-label text-white ">Email</label>
             <input type="email" class="form-control" name="emailCo" placeholder="email">
         </div>
         </div>
 
         <div class="col-md-6">
-        <div class="bg-success ps-2 pe-2 pt-1 pb-4">
+        <div class="bg-secondary ps-2 pe-2 pt-1 pb-4">
         <label for="exampleInputMdP" class="form-label text-white ">MdP</label>
             <input type="password" class="form-control" name="mdpCo" placeholder="MdP" required>
             <button type="submit" class="btn btn-lg btn-primary" name="connexion">Connexion</button>
@@ -49,9 +49,9 @@ include("connexion.php");
         </div>
             
 
-        </form>
+    </form>
         </div>
-        </div>
+    </div>
 </body>
 </html>
 
