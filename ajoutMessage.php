@@ -8,7 +8,7 @@ require_once("header.php");
 
 
 
-$message=$_POST["usermsg"];
+$message=$_POST["usertxt"];
 echo $message;
 
     $query = "INSERT INTO messagerie (message_contenu) VALUES (:message_contenu)";
@@ -18,7 +18,7 @@ echo $message;
         ":message_contenu" => $message,
     )); 
     echo "Message : Envoyé"  ;
-    
+
 }catch(PDOException $e){
     echo ("Erreur :" .$e-> getMessage());
 }

@@ -50,13 +50,16 @@ include_once("header.php");
             </script>
         
             </div>
-            <div class="col-md-4 ms-0">
             <form id="formElem" class="col-md-6">
                     <input name="usertxt" type="text" id="usermsg" size="63" />
                     <input class=" btn btn-secondary" name="send" value="usermsg"type="submit">SEND</input>
                 </form> 
-        </div>
-    
+
+<script>
+                formElem.onsubmit = async (e) => {
+        e.preventDefault();
+                }
+        </script>
     
         
         <div class= "col-md-4 ms-5 border border-light pt-1 w-500 overflow-scroll" style="height: 600px;" name="connected">
