@@ -49,7 +49,7 @@ include_once("header.php");
 
                 <form id="formElem" class="col-md-6">
                     <input name="usertxt" type="text" id="usermsg" size="63" />
-                    <input class=" btn btn-secondary" name="send" value="usermsg"type="submit">SEND</input>
+                    <button type="submit" name="button" id="btn" class=" bg-secondary border border-secondary w-50"><a href="deco.php?deconnexion=oui" class="attribut text-light">Déconnexion</a></button>
                 </form> 
 
 <script>
@@ -61,8 +61,9 @@ include_once("header.php");
 
 
 </div> 
-<div class= "col-md-4 ms-3 border border-lightpt-1 overflow" name="connected">
-    <?php include("listUser.php")?>        
-    <p class="display-5 text-center text-light pb-2">En ligne</p>
-</div>
+<div class= "col-md-4 ms-3 border border-lightpt-1 w-500 overflow-scroll" style="height:600px;" name="connected">
+<p class="display-5 text-center text-light pb-2">En ligne</p>
+    <?php include("listUser.php")?> 
+            </div>  
+    
     </body>
