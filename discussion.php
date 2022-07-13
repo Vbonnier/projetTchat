@@ -5,12 +5,12 @@ include_once("header.php");
 
 
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discussion</title>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Discussion</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
@@ -39,15 +39,9 @@ include_once("header.php");
 
             <script>    
             
-            setInterval(function(){
-                fetch('messages.php')
-                .then(response=>response.json())
-                .then(data =>{
-                    document.querySelector('#chatbox').innerHTML = data;
-                })
-            },5000);
+            <link rel="stylesheet" href="style.css">
+            <script src="tchat.js"></script>
 
-            </script>
         
             </div>
             <form id="formElem" class="col-md-6">
@@ -69,12 +63,6 @@ include_once("header.php");
         <div class=" btn btn-primary col-md-3 ms-0 ">
             <button type="submit" name="button" id="btn" class=" bg-primary border border-primary"><a href="deco.php?deconnexion=oui" class="attribut text-light">Déconnexion</a></button>
             
-        </div>
-        
-</div> 
-
-
-
-
-</script>
-</body>
+            
+        </div> 
+    </body>
