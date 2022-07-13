@@ -27,7 +27,7 @@ include("connexion.php");
     <!-- Formulaire de connexion -->
     <div class="container py-5 bg-secondary w-50 h-50 mt-5 opacity-75">
         <div class="row">
-    <h1 class="display-3 text-dark text-center">FORMULAIRE DE CONNEXION</h1>
+    <h1 class="display-3 text-light text-center">FORMULAIRE DE CONNEXION</h1>
     <form method="post">
 
         <div class="col-md-6">
