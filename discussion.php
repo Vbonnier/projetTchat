@@ -38,19 +38,7 @@ include_once("header.php");
                             
 
                         <script>    
-                    
-                    // setInterval(function(){
-                    //     fetch('messages.php')
-                    //     .then(response=>response.json())
-                    //     .then(data =>{
-                    //         document.querySelector('#chatbox').innerHTML = data;
-                    //     })
-                    // },5000);
-
-                    // setInterval(() => {
-                    //     document.querySelector('#chatbox').innerHTML = new Date().toLocaleTimeString();
-                    // }, 1000);
-
+          
                     setInterval(() => {
                         fetch('messages.php').then(response=>response.text()).then(html=>{
                             document.querySelector('#chatbox').innerHTML=html;
@@ -58,21 +46,7 @@ include_once("header.php");
                     }, 5000);
 
 
-                    // document.querySelector('#usermsg').addEventListener("keyup",() =>{
-                        // const formData= new FormData();
-                        // formData.append('usermsg'),document.querySelector('#usermsg').value;
-
-                        // const options ={
-                        //     method: 'POST',
-                        //     body : formData,
-                        // };
-
-                        // fetch('ajoutMessage.php',options)
-                        // .then(response=>response.text())
-                        // .then(data=>{
-                        //     console.log(data);
-                        // })
-                    // });
+              
                         </script>
                 </div>
 
