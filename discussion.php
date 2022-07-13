@@ -44,9 +44,7 @@ include_once("header.php");
                             document.querySelector('#chatbox').innerHTML=html;
                         })
                     }, 5000);
-
-
-              
+                    
                         </script>
                 </div>
 
