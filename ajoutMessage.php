@@ -8,7 +8,7 @@ require_once("header.php");
 
 
 
-$message=$_POST["usertxt"];
+$message=$_POST["usermsg"];
 echo $message;
 
     $query = "INSERT INTO messagerie (message_contenu) VALUES (:message_contenu)";
